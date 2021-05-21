@@ -8,12 +8,12 @@ Setup db: use docker to download mongodb and start on default docker mongodb por
   MONGO_URL as /mongodb://localhost:27017 format
 
 
-##Sample usage
+##S ample usage
 
 Please use some tool to send requests. I used Postman for testing the apis.
 
-#Routes
-  ##Signup
+# Routes
+  ## Signup
   POST:http://localhost:8000/users/signup
   Body(raw-JSON):
 {
@@ -29,7 +29,7 @@ should return: {
 }
 id might be different.
 
-  ##Login
+  ## Login
   POST:http://localhost:8000/users/login
   Body(raw-JSON):
 {
