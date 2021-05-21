@@ -14,8 +14,11 @@ Please use some tool to send requests. I used Postman for testing the apis.
 
 # Routes
   ## Signup
+  
   POST:http://localhost:8000/users/signup
+  
   Body(raw-JSON):
+  
 {
 "first_name":"Hello",
 "last_name":"World",
@@ -24,20 +27,28 @@ Please use some tool to send requests. I used Postman for testing the apis.
 "phone":"1234567889"
 }
 
-should return: {
+should return: 
+
+{
     "InsertedID": "60a8001418f113af23a21e80"
 }
+
+
 id might be different.
 
   ## Login
+  
   POST:http://localhost:8000/users/login
+  
   Body(raw-JSON):
+  
 {
 "email":"worlds@gmail.com",
 "Password":"password"
 }
 
 should return:
+
 {
     "ID": "60a74524d31e909feb050e0c",
     "first_name": "Hello",
@@ -53,19 +64,30 @@ should return:
 }
 
 ## API - 1
-GET:http://localhost:8000/api-1
-Headers: token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Indvcmxkc0BnbWFpbC5jb20iLCJGaXJzdF9uYW1lIjoiSGVsbG8iLCJMYXN0X25hbWUiOiJXb3JsZCIsIlVpZCI6IjYwYTc0NTI0ZDMxZTkwOWZlYjA1MGUwYyIsImV4cCI6MTYyMTY2MTYwNn0.C9VB3jBSnk3z2bE7d9xhyY3rw2Ks66FONM0aueeKdFc
 
-Should return: {
+GET:http://localhost:8000/api-1
+
+Headers:
+
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Indvcmxkc0BnbWFpbC5jb20iLCJGaXJzdF9uYW1lIjoiSGVsbG8iLCJMYXN0X25hbWUiOiJXb3JsZCIsIlVpZCI6IjYwYTc0NTI0ZDMxZTkwOWZlYjA1MGUwYyIsImV4cCI6MTYyMTY2MTYwNn0.C9VB3jBSnk3z2bE7d9xhyY3rw2Ks66FONM0aueeKdFc
+
+Should return:
+
+{
     "success": "Access granted for api-1"
 }
 
 
 ## API -2 
 GET:http://localhost:8000/api-2
-HEaders: token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Indvcmxkc0BnbWFpbC5jb20iLCJGaXJzdF9uYW1lIjoiSGVsbG8iLCJMYXN0X25hbWUiOiJXb3JsZCIsIlVpZCI6IjYwYTc0NTI0ZDMxZTkwOWZlYjA1MGUwYyIsImV4cCI6MTYyMTY2MTM0OH0.V5vW-6uAJUGk2kKj5ZyyBv54oi8WltdegkTVzPdS-5I
 
-Should return {
+HEaders:
+
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Indvcmxkc0BnbWFpbC5jb20iLCJGaXJzdF9uYW1lIjoiSGVsbG8iLCJMYXN0X25hbWUiOiJXb3JsZCIsIlVpZCI6IjYwYTc0NTI0ZDMxZTkwOWZlYjA1MGUwYyIsImV4cCI6MTYyMTY2MTM0OH0.V5vW-6uAJUGk2kKj5ZyyBv54oi8WltdegkTVzPdS-5I
+
+Should return 
+
+{
     "success": "Access granted for api-2"
 }
 
