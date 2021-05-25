@@ -8,7 +8,7 @@ Setup db: use docker to download mongodb and start on default docker mongodb por
   MONGO_URL as /mongodb://localhost:27017 format
 
 
-##S ample usage
+## Sample usage
 
 Please use some tool to send requests. I used Postman for testing the apis.
 
